@@ -20,15 +20,15 @@ bot.on("message", async message => {
 	      message.channel.send("helo!");
     }
 	
-    if (cmd === `${prefix}Maryinfo) {
+    if (cmd === `${prefix}Maryinfo`) {
 	let bicon = bot.user.displayAvatarURL; // untuk menampilkan avatar dari bot kalian
 	let botembed = new Discord.RichEmbed()
 		.setAuthor("Informasi Bot")
 		.setColor("RANDOM") // kalian juga bisa menggunakan kode HEX, cari di google
 		.setThumbnail(bicon) // thumbnail dari avatar bot kalian tadi
 		.addField("Nama Bot", bot.user.username)
-		.addField("Dibuat", bot.user.createdAt);
-		.setFooter("©haniy)
+		.addField("Dibuat", bot.user.createdAt)
+		.setFooter("©haniy")
         	.setTimestamp()
 
 		message.channel.send(botembed); // untuk mengirim embed yang sudah dibuat diatas..
